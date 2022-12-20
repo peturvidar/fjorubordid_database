@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\fjorubordid_database.props" />
+</Project>

@@ -1,0 +1,60 @@
+2022-12-19 16:37:57.760 +00:00 [INF] Now listening on: https://localhost:8000
+2022-12-19 16:37:58.042 +00:00 [INF] Now listening on: http://localhost:8001
+2022-12-19 16:37:58.185 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-19 16:37:58.193 +00:00 [INF] Hosting environment: Development
+2022-12-19 16:37:58.211 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2022-12-19 16:38:29.739 +00:00 [INF] Now listening on: https://localhost:8000
+2022-12-19 16:38:29.780 +00:00 [INF] Now listening on: http://localhost:8001
+2022-12-19 16:38:29.783 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-19 16:38:29.784 +00:00 [INF] Hosting environment: Development
+2022-12-19 16:38:29.785 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2022-12-19 16:39:27.770 +00:00 [INF] Now listening on: https://localhost:8000
+2022-12-19 16:39:27.820 +00:00 [INF] Now listening on: http://localhost:8001
+2022-12-19 16:39:27.822 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-19 16:39:27.824 +00:00 [INF] Hosting environment: Development
+2022-12-19 16:39:27.825 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2022-12-19 17:14:50.690 +00:00 [INF] Now listening on: https://localhost:8000
+2022-12-19 17:14:50.733 +00:00 [INF] Now listening on: http://localhost:8001
+2022-12-19 17:14:50.741 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-19 17:14:50.744 +00:00 [INF] Hosting environment: Development
+2022-12-19 17:14:50.745 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2022-12-19 17:22:47.821 +00:00 [INF] Now listening on: https://localhost:8000
+2022-12-19 17:22:47.893 +00:00 [INF] Now listening on: http://localhost:8001
+2022-12-19 17:22:47.896 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-19 17:22:47.898 +00:00 [INF] Hosting environment: Development
+2022-12-19 17:22:47.899 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2022-12-19 17:22:55.811 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions options) in C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity\Program.cs:line 36
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsCache`1.<>c__3`1.<GetOrAdd>b__3_0(String name, ValueTuple`2 arg)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd[TArg](TKey key, Func`3 valueFactory, TArg factoryArgument)
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2022-12-19 17:25:25.308 +00:00 [INF] Now listening on: https://localhost:8000
+2022-12-19 17:25:25.488 +00:00 [INF] Now listening on: http://localhost:8001
+2022-12-19 17:25:25.495 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-19 17:25:25.497 +00:00 [INF] Hosting environment: Development
+2022-12-19 17:25:25.503 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2022-12-19 17:40:11.973 +00:00 [INF] Now listening on: https://localhost:8000
+2022-12-19 17:40:12.046 +00:00 [INF] Now listening on: http://localhost:8001
+2022-12-19 17:40:12.051 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-19 17:40:12.053 +00:00 [INF] Hosting environment: Development
+2022-12-19 17:40:12.054 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2022-12-19 18:07:00.654 +00:00 [INF] Now listening on: https://localhost:8000
+2022-12-19 18:07:00.745 +00:00 [INF] Now listening on: http://localhost:8001
+2022-12-19 18:07:00.748 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-19 18:07:00.750 +00:00 [INF] Hosting environment: Development
+2022-12-19 18:07:00.751 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2022-12-19 20:39:48.973 +00:00 [INF] Now listening on: https://localhost:8000
+2022-12-19 20:39:49.112 +00:00 [INF] Now listening on: http://localhost:8001
+2022-12-19 20:39:49.117 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-19 20:39:49.120 +00:00 [INF] Hosting environment: Development
+2022-12-19 20:39:49.121 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
