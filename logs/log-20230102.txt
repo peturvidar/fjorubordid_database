@@ -1,0 +1,40 @@
+2023-01-02 13:58:13.550 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-02 13:58:13.593 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-02 13:58:13.596 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-02 13:58:13.597 +00:00 [INF] Hosting environment: Development
+2023-01-02 13:58:13.598 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-02 14:30:37.990 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-02 14:30:38.021 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-02 14:30:38.025 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-02 14:30:38.026 +00:00 [INF] Hosting environment: Development
+2023-01-02 14:30:38.028 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-02 14:47:36.714 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-02 14:47:36.758 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-02 14:47:36.760 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-02 14:47:36.761 +00:00 [INF] Hosting environment: Development
+2023-01-02 14:47:36.761 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-02 14:56:11.825 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-02 14:56:11.879 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-02 14:56:11.882 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-02 14:56:11.883 +00:00 [INF] Hosting environment: Development
+2023-01-02 14:56:11.884 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-02 14:57:17.168 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-02 14:57:17.207 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-02 14:57:17.210 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-02 14:57:17.210 +00:00 [INF] Hosting environment: Development
+2023-01-02 14:57:17.211 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-02 15:09:15.935 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-02 15:09:15.969 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-02 15:09:15.971 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-02 15:09:15.971 +00:00 [INF] Hosting environment: Development
+2023-01-02 15:09:15.972 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-02 15:12:57.445 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-02 15:12:57.486 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-02 15:12:57.488 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-02 15:12:57.489 +00:00 [INF] Hosting environment: Development
+2023-01-02 15:12:57.491 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-02 15:19:41.485 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-02 15:19:41.529 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-02 15:19:41.530 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-02 15:19:41.531 +00:00 [INF] Hosting environment: Development
+2023-01-02 15:19:41.531 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity

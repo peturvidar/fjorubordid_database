@@ -2,12 +2,14 @@
 using fjorubordid_database.Data;
 using fjorubordid_database.Data.Interfaces;
 using fjorubordid_database.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 
 namespace fjorubordid_database.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AccountController : ControllerBase
@@ -19,7 +21,7 @@ namespace fjorubordid_database.Controllers
         {
             _authManager= authManager;
         }
-
+        [AllowAnonymous]
         [HttpPost]
         [Route("register")]
         public async Task<ActionResult> Register([FromBody] ApiUserDto apiUserDto)
@@ -30,13 +32,21 @@ namespace fjorubordid_database.Controllers
                 foreach (var error in errors)
                 {
                     ModelState.AddModelError(error.Code, error.Description);
+
+                   if (error.Code == "DuplicateUserName")
+                    {
+                        return Conflict(ModelState);
+                    }
+                    else
+                    {
+                        return BadRequest(ModelState);
+                    }
                 }
-                return BadRequest(ModelState);
-            }
+               }
             return Ok();
         }
 
-        
+        [AllowAnonymous]
         [HttpPost]
         [Route("login")]
         public async Task<ActionResult> Login([FromBody] LoginDto loginDto)
@@ -48,5 +58,6 @@ namespace fjorubordid_database.Controllers
 
             return Ok(authResponse);
         }
+
     }
 }

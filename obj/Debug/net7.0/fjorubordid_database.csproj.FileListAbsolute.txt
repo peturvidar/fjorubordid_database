@@ -578,3 +578,4 @@ C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity\bin\Debug
 C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
 C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity\bin\Debug\net7.0\Serilog.Sinks.File.dll
 C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity\bin\Debug\net7.0\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity\bin\Debug\net7.0\fjorubordid_database.staticwebassets.runtime.json

@@ -51,13 +51,13 @@ namespace fjorubordiddatabase.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "d15998cf-4e83-408d-9a84-5a64ed40b44a",
+                            Id = "477dada8-ca27-4b60-84d3-82fc830dbd78",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "73adaf6f-2bf4-4be3-871d-a167790e95f1",
+                            Id = "aa540fd0-9dac-40e0-8e78-f081bc9729c4",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });
@@ -208,6 +208,9 @@ namespace fjorubordiddatabase.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
+                    b.Property<string>("OwnerID")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
 
@@ -219,6 +222,9 @@ namespace fjorubordiddatabase.Migrations
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
@@ -251,8 +257,14 @@ namespace fjorubordiddatabase.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("OrderItemId")
+                        .HasColumnType("int");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
@@ -262,6 +274,8 @@ namespace fjorubordiddatabase.Migrations
 
                     b.HasKey("DrinkId");
 
+                    b.HasIndex("OrderItemId");
+
                     b.ToTable("Drinks");
 
                     b.HasData(
@@ -269,6 +283,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             DrinkId = 1,
                             Description = "Egils Gull 0.5l",
+                            ImagePath = "gull.png",
                             Name = "Egils Gull 0.5l",
                             Quantity = 1,
                             UnitPrice = 1400
@@ -277,6 +292,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             DrinkId = 2,
                             Description = "Egils Gull 0.3l",
+                            ImagePath = "gull.png",
                             Name = "Egils Gull 0.3l",
                             Quantity = 1,
                             UnitPrice = 1200
@@ -285,6 +301,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             DrinkId = 3,
                             Description = "Flaska af hvítvíni hússins",
+                            ImagePath = "white.jpg",
                             Name = "Hvítvín hússins",
                             Quantity = 1,
                             UnitPrice = 7200
@@ -293,6 +310,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             DrinkId = 4,
                             Description = "Flaska af rauðvíni hússins",
+                            ImagePath = "red.png",
                             Name = "Rauðvín hússins",
                             Quantity = 1,
                             UnitPrice = 7200
@@ -301,6 +319,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             DrinkId = 5,
                             Description = "Pepsi í gleri 330ml",
+                            ImagePath = "pepsi.jpg",
                             Name = "Pepsi",
                             Quantity = 1,
                             UnitPrice = 500
@@ -309,6 +328,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             DrinkId = 6,
                             Description = "Pepsi í gleri 330ml",
+                            ImagePath = "pepsimax.jpg",
                             Name = "Pepsi Max",
                             Quantity = 1,
                             UnitPrice = 500
@@ -317,6 +337,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             DrinkId = 7,
                             Description = "7up í gleri 330ml",
+                            ImagePath = "7up.jpg",
                             Name = "7up",
                             Quantity = 1,
                             UnitPrice = 500
@@ -325,6 +346,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             DrinkId = 8,
                             Description = "Appelsín í gleri 330ml",
+                            ImagePath = "appelsin.png",
                             Name = "Appelsín",
                             Quantity = 1,
                             UnitPrice = 500
@@ -333,6 +355,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             DrinkId = 9,
                             Description = "Kristall í gleri 330ml án bragðefna",
+                            ImagePath = "kristall.jpg",
                             Name = "Kristall",
                             Quantity = 1,
                             UnitPrice = 500
@@ -341,6 +364,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             DrinkId = 10,
                             Description = "Sleipnir Pale Ale frá Ölvisholt Brugghús 330ml",
+                            ImagePath = "sleipnir.jpg",
                             Name = "Sleipnir Pale Ale",
                             Quantity = 1,
                             UnitPrice = 1600
@@ -358,8 +382,14 @@ namespace fjorubordiddatabase.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("OrderItemId")
+                        .HasColumnType("int");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
@@ -369,6 +399,8 @@ namespace fjorubordiddatabase.Migrations
 
                     b.HasKey("FoodId");
 
+                    b.HasIndex("OrderItemId");
+
                     b.ToTable("Foods");
 
                     b.HasData(
@@ -376,6 +408,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             FoodId = 1,
                             Description = "3ja rétta 400g",
+                            ImagePath = "humar.jpg",
                             Name = "3ja rétta 400g",
                             Quantity = 1,
                             UnitPrice = 14175
@@ -384,6 +417,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             FoodId = 2,
                             Description = "3ja rétta 300g",
+                            ImagePath = "humar.jpg",
                             Name = "3ja rétta 300g",
                             Quantity = 1,
                             UnitPrice = 12250
@@ -392,6 +426,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             FoodId = 3,
                             Description = "Leturhumar 400g",
+                            ImagePath = "humar.jpg",
                             Name = "Humar 400g",
                             Quantity = 1,
                             UnitPrice = 10750
@@ -400,6 +435,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             FoodId = 4,
                             Description = "Leturhumar 300g",
+                            ImagePath = "humar.jpg",
                             Name = "Humar 300g",
                             Quantity = 1,
                             UnitPrice = 8650
@@ -408,6 +444,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             FoodId = 5,
                             Description = "Leturhumar 250g",
+                            ImagePath = "humar.jpg",
                             Name = "Humar 250g",
                             Quantity = 1,
                             UnitPrice = 8050
@@ -416,6 +453,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             FoodId = 6,
                             Description = "Aðalréttur",
+                            ImagePath = "supa.jpg",
                             Name = "Humarsúpa",
                             Quantity = 1,
                             UnitPrice = 4190
@@ -424,6 +462,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             FoodId = 7,
                             Description = "Forréttur",
+                            ImagePath = "supa.jpg",
                             Name = "Humarsúpa",
                             Quantity = 1,
                             UnitPrice = 3250
@@ -432,6 +471,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             FoodId = 8,
                             Description = "Grænmetisréttur",
+                            ImagePath = "green.jpg",
                             Name = "Grænmetisréttur",
                             Quantity = 1,
                             UnitPrice = 4190
@@ -440,6 +480,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             FoodId = 9,
                             Description = "Lambahryggvöðvi",
+                            ImagePath = "lamb.jpg",
                             Name = "Lambahryggvöðvi",
                             Quantity = 1,
                             UnitPrice = 6250
@@ -448,6 +489,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             FoodId = 10,
                             Description = "Barnamatseðill",
+                            ImagePath = "naggar.jpg",
                             Name = "Kjúklinganaggar",
                             Quantity = 1,
                             UnitPrice = 990
@@ -456,6 +498,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             FoodId = 11,
                             Description = "Barnamatseðill",
+                            ImagePath = "samloka.jpg",
                             Name = "Samloka",
                             Quantity = 1,
                             UnitPrice = 990
@@ -464,6 +507,7 @@ namespace fjorubordiddatabase.Migrations
                         {
                             FoodId = 12,
                             Description = "Eftirréttur tertusneið",
+                            ImagePath = "dessert.jpg",
                             Name = "Eftirréttur",
                             Quantity = 1,
                             UnitPrice = 1650
@@ -495,6 +539,9 @@ namespace fjorubordiddatabase.Migrations
 
                     b.Property<int>("UnitPrice")
                         .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("OrderItemId");
 
@@ -550,6 +597,29 @@ namespace fjorubordiddatabase.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("fjorubordid_database.Models.Drink", b =>
+                {
+                    b.HasOne("fjorubordid_database.Models.OrderItem", null)
+                        .WithMany("Drink")
+                        .HasForeignKey("OrderItemId");
+                });
+
+            modelBuilder.Entity("fjorubordid_database.Models.Food", b =>
+                {
+                    b.HasOne("fjorubordid_database.Models.OrderItem", "OrderItem")
+                        .WithMany("Food")
+                        .HasForeignKey("OrderItemId");
+
+                    b.Navigation("OrderItem");
+                });
+
+            modelBuilder.Entity("fjorubordid_database.Models.OrderItem", b =>
+                {
+                    b.Navigation("Drink");
+
+                    b.Navigation("Food");
                 });
 #pragma warning restore 612, 618
         }

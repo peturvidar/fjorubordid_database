@@ -1,5 +1,7 @@
 ﻿using fjorubordid_database.Data.Interfaces;
 using fjorubordid_database.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
 
 namespace fjorubordid_database.Data
 {    ///þ gagnagrunnsaðgerðir, klasi til að stýra gagnagrunninum
@@ -14,7 +16,7 @@ namespace fjorubordid_database.Data
 
         public Food GetFoodById(int id)
         {
-            return _dbContext.Foods.Where(t => t.FoodId == id).FirstOrDefault();
+            return _dbContext.Foods.Where(t => t.FoodId == id).FirstOrDefault()!;
         }
         public void CreateFood(Food food)
         {
@@ -30,7 +32,7 @@ namespace fjorubordid_database.Data
                 _dbContext.SaveChanges();
                 return result;
             }
-            return null;
+            return null!;
         }
         public List<Food> GetAllFoods()
         {
@@ -44,7 +46,7 @@ namespace fjorubordid_database.Data
         }
         public Drink GetDrinkById(int id)
         {
-            return _dbContext.Drinks.Where(t => t.DrinkId == id).FirstOrDefault();
+            return _dbContext.Drinks.Where(t => t.DrinkId == id).FirstOrDefault()!;
         }
 
         public void AddItem(OrderItem orderItem)
@@ -52,7 +54,7 @@ namespace fjorubordid_database.Data
             _dbContext.Add(orderItem);
             _dbContext.SaveChanges();
         }
-        public void UpdateItemFood(OrderItem orderItem)
+       /* public void UpdateItemFood(OrderItem orderItem)
         {
 
             var result = _dbContext.OrderItems.Where(t => t.FoodId == orderItem.FoodId).FirstOrDefault();
@@ -67,10 +69,9 @@ namespace fjorubordid_database.Data
 
             }
 
-        }
+        }*/
         public void UpdateItemDrink(OrderItem orderItem)
         {
-
             var result = _dbContext.OrderItems.Where(t => t.DrinkId == orderItem.DrinkId).FirstOrDefault();
             if (result!.DrinkId == orderItem.DrinkId)
             {
@@ -82,7 +83,6 @@ namespace fjorubordid_database.Data
                 _dbContext.SaveChanges();
 
             }
-
         }
 
         public List<OrderItem> GetAllOrderItems()
@@ -91,20 +91,20 @@ namespace fjorubordid_database.Data
         }
         public OrderItem GetOrderItemById(int id)
         {
-            return _dbContext.OrderItems.Where(t => t.OrderItemId == id).FirstOrDefault();
+            return _dbContext.OrderItems.Where(t => t.OrderItemId == id).FirstOrDefault()!;
         }
 
-        public OrderItem GetOrderItemByFoodId(int id)
+        /*public OrderItem GetOrderItemByFoodId(int id)
         {
-            return _dbContext.OrderItems.Where(t => t.FoodId == id).FirstOrDefault();
-        }
+            return _dbContext.OrderItems.Where(t => t.FoodId == id).FirstOrDefault()!;
+        }*/
 
         public OrderItem GetOrderItemByDrinkId(int id)
         {
-            return _dbContext.OrderItems.Where(t => t.DrinkId == id).FirstOrDefault();
+            return _dbContext.OrderItems.Where(t => t.DrinkId == id).FirstOrDefault()!;
         }
 
-        public OrderItem DeleteOrderItem(int OrderItemId)
+        public OrderItem DeleteOrderItemById(int OrderItemId)
         {
             var result = _dbContext.OrderItems.FirstOrDefault(e => e.OrderItemId == OrderItemId);
             if (result != null)
@@ -113,16 +113,47 @@ namespace fjorubordid_database.Data
                 _dbContext.SaveChanges();
                 return result;
             }
-            return null;
+            return null!;
         }
 
         public OrderItem DeleteAllOrderItems(OrderItem item)
         {
-            // var deleteAll = _dbContext.OrderItems.Select(x => new OrderItem { OrderItemId = x.OrderItemId }).ToList();
+            
             _dbContext.OrderItems.RemoveRange(item);
             _dbContext.SaveChanges();
             return null!;
         }
 
+        public OrderItem GetOrderItemByUserId(string id)
+        {
+            return _dbContext.OrderItems.Where(t => t.UserId == id).FirstOrDefault()!;
+            
+        }
+        public List<OrderItem> GetAllOrderItemsByUserId(string id)
+        {
+            return _dbContext.OrderItems.Where(t => t.UserId == id).ToList();
+
+        }
+
+        public void UpdateItemFood(OrderItem orderItem)
+        {
+            var result = _dbContext.OrderItems.Where(t => t.FoodId == orderItem.FoodId).FirstOrDefault();
+            if (result!.FoodId == orderItem.FoodId)
+            {
+
+                _dbContext.OrderItems.Attach(result);
+
+                result.UnitPrice = orderItem.UnitPrice;
+                result.Quantity = orderItem.Quantity;
+                _dbContext.SaveChanges();
+
+            }
+        }
+
+        public OrderItem GetOrderItemByFoodId(int id)
+        {
+            return _dbContext.OrderItems.Where(t => t.FoodId == id).FirstOrDefault()!;
+        }
+                
     }
 }

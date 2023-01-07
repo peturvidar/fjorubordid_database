@@ -16,10 +16,12 @@ namespace fjorubordid_database.Data.Interfaces
         void UpdateItemDrink(OrderItem orderItem);
         List<OrderItem> GetAllOrderItems();
         public OrderItem GetOrderItemById(int id);
+        public OrderItem GetOrderItemByUserId(string id);
+        public List<OrderItem> GetAllOrderItemsByUserId(string id);
         public OrderItem GetOrderItemByFoodId(int id);
         public OrderItem GetOrderItemByDrinkId(int id);
-        public OrderItem DeleteOrderItem(int id);
-        public OrderItem DeleteAllOrderItems(OrderItem item);
+        public OrderItem DeleteOrderItemById(int id);
+        OrderItem DeleteAllOrderItems(OrderItem item);
 
 
     }

@@ -8,5 +8,6 @@ namespace fjorubordid_database.Data.Interfaces
         Task<IEnumerable<IdentityError>> Register(ApiUserDto apiUserDto);
 
         Task<AuthResponseDto> Login(LoginDto loginDto);
+        
     }
 }

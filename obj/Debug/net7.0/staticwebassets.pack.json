@@ -1,0 +1,85 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\7up.jpg",
+      "PackagePath": "staticwebassets\\Images\\7up.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\appelsin.png",
+      "PackagePath": "staticwebassets\\Images\\appelsin.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\dessert.jpg",
+      "PackagePath": "staticwebassets\\Images\\dessert.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\green.jpg",
+      "PackagePath": "staticwebassets\\Images\\green.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\gull.png",
+      "PackagePath": "staticwebassets\\Images\\gull.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\humar.jpg",
+      "PackagePath": "staticwebassets\\Images\\humar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\kristall.Jpg",
+      "PackagePath": "staticwebassets\\Images\\kristall.Jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\lamb.jpg",
+      "PackagePath": "staticwebassets\\Images\\lamb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\naggar.jpg",
+      "PackagePath": "staticwebassets\\Images\\naggar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\pepsi.jpg",
+      "PackagePath": "staticwebassets\\Images\\pepsi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\pepsimax.jpg",
+      "PackagePath": "staticwebassets\\Images\\pepsimax.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\red.png",
+      "PackagePath": "staticwebassets\\Images\\red.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\samloka.jpg",
+      "PackagePath": "staticwebassets\\Images\\samloka.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\sleipnir.jpg",
+      "PackagePath": "staticwebassets\\Images\\sleipnir.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\supa.jpg",
+      "PackagePath": "staticwebassets\\Images\\supa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\NTV\\Haust22\\Lokaverkefni\\fjorubordid_database_identity\\wwwroot\\Images\\white.jpg",
+      "PackagePath": "staticwebassets\\Images\\white.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.fjorubordid_database.props",
+      "PackagePath": "build\\fjorubordid_database.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.fjorubordid_database.props",
+      "PackagePath": "buildMultiTargeting\\fjorubordid_database.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.fjorubordid_database.props",
+      "PackagePath": "buildTransitive\\fjorubordid_database.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.fjorubordid_database.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

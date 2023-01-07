@@ -1,0 +1,110 @@
+2023-01-05 11:05:29.975 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-05 11:05:30.004 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-05 11:05:30.006 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-05 11:05:30.007 +00:00 [INF] Hosting environment: Development
+2023-01-05 11:05:30.008 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-05 11:22:01.206 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-05 11:22:01.232 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-05 11:22:01.233 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-05 11:22:01.234 +00:00 [INF] Hosting environment: Development
+2023-01-05 11:22:01.234 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-05 11:22:55.775 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-05 11:22:55.807 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-05 11:22:55.811 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-05 11:22:55.812 +00:00 [INF] Hosting environment: Development
+2023-01-05 11:22:55.812 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-05 11:47:18.911 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-05 11:47:18.936 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-05 11:47:18.939 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-05 11:47:18.940 +00:00 [INF] Hosting environment: Development
+2023-01-05 11:47:18.940 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-05 11:50:41.709 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-05 11:50:41.738 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-05 11:50:41.740 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-05 11:50:41.742 +00:00 [INF] Hosting environment: Development
+2023-01-05 11:50:41.742 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-05 17:09:31.843 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-05 17:09:31.876 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-05 17:09:31.879 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-05 17:09:31.881 +00:00 [INF] Hosting environment: Development
+2023-01-05 17:09:31.883 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-05 17:15:52.484 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-05 17:15:52.527 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-05 17:15:52.530 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-05 17:15:52.531 +00:00 [INF] Hosting environment: Development
+2023-01-05 17:15:52.532 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-05 17:49:44.713 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-05 17:49:44.747 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-05 17:49:44.750 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-05 17:49:44.752 +00:00 [INF] Hosting environment: Development
+2023-01-05 17:49:44.754 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-05 17:50:53.844 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: IDX10000: The parameter 'token' cannot be a 'null' or an empty object.  (Parameter 'token')
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ReadJwtToken(String token)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ReadToken(String token)
+   at fjorubordid_database.Controllers.FjorubordidController.GetUserIdFromToken() in C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity\Controllers\FjorubordidController.cs:line 22
+   at fjorubordid_database.Controllers.FjorubordidController.IncreaseQuantityOrderItemDrink(OrderItem orderItem) in C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity\Controllers\FjorubordidController.cs:line 413
+   at lambda_method240(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-01-05 18:00:41.256 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: IDX10000: The parameter 'token' cannot be a 'null' or an empty object.  (Parameter 'token')
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ReadJwtToken(String token)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ReadToken(String token)
+   at fjorubordid_database.Controllers.FjorubordidController.GetUserIdFromToken() in C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity\Controllers\FjorubordidController.cs:line 22
+   at fjorubordid_database.Controllers.FjorubordidController.IncreaseQuantityOrderItemDrink(OrderItem orderItem) in C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity\Controllers\FjorubordidController.cs:line 413
+   at lambda_method240(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-01-05 18:02:59.468 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-05 18:02:59.504 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-05 18:02:59.507 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-05 18:02:59.508 +00:00 [INF] Hosting environment: Development
+2023-01-05 18:02:59.509 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-05 19:27:34.496 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-05 19:27:34.545 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-05 19:27:34.551 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-05 19:27:34.552 +00:00 [INF] Hosting environment: Development
+2023-01-05 19:27:34.553 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-05 19:30:23.083 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-05 19:30:23.137 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-05 19:30:23.140 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-05 19:30:23.141 +00:00 [INF] Hosting environment: Development
+2023-01-05 19:30:23.142 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity
+2023-01-05 19:32:31.592 +00:00 [INF] Now listening on: https://localhost:8000
+2023-01-05 19:32:31.621 +00:00 [INF] Now listening on: http://localhost:8001
+2023-01-05 19:32:31.623 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-05 19:32:31.624 +00:00 [INF] Hosting environment: Development
+2023-01-05 19:32:31.627 +00:00 [INF] Content root path: C:\Users\Lenovo\NTV\Haust22\Lokaverkefni\fjorubordid_database_identity

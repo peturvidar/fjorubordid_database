@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using fjorubordid_database.Data.Interfaces;
 using fjorubordid_database.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -15,12 +16,15 @@ namespace fjorubordid_database.Data
         private readonly UserManager<ApiUser> _userManager;
         private readonly IConfiguration _configuration;
         private ApiUser? _user;
-
-        public AuthManager(IMapper mapper, UserManager<ApiUser> userManager, IConfiguration configuration)
+        //private readonly SignInManager<ApiUser> _signInManager;
+        
+        public AuthManager(IMapper mapper, UserManager<ApiUser> userManager, IConfiguration configuration /*SignInManager<ApiUser> signInManager*/)
         {
             _mapper = mapper;
             _userManager = userManager;
             _configuration = configuration;
+           // _signInManager = signInManager;
+            
         }
 
         public async Task<AuthResponseDto> Login(LoginDto loginDto)
@@ -40,6 +44,17 @@ namespace fjorubordid_database.Data
             };
         }
 
+        /*private async Task<ApiUser> AuthenticateUser(LoginDto loginDto)
+        {
+            var result = await _signInManager.PasswordSignInAsync(loginDto.Email!, loginDto.Password!, false, lockoutOnFailure:false);
+            if(result.Succeeded)
+            {
+                var userInfo = await _userManager.FindByEmailAsync(loginDto.Email!);
+                return userInfo!;
+            }
+            return null!;
+        }*/
+
         public async Task<IEnumerable<IdentityError>> Register(ApiUserDto apiUserDto)
         {
             var user = _mapper.Map<ApiUser>(apiUserDto);
@@ -55,8 +70,7 @@ namespace fjorubordid_database.Data
 
         private async Task<string> GenerateToken()
         {
-            // var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:Key"]));
-            // **>CK Getting "String reference not set to an object of a string when using this, what?
+            
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("d5e0f15a-097e-46ad-a482-e7828e6447d9"));
 
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
