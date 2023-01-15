@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\fjorubordid_api.props" />
+</Project>
